@@ -1,0 +1,32 @@
+<%- include('partials/header') %>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone number</th>
+                <th scope="col" class="text-end">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- <th scope="row">1</th> -->
+                <td>
+                    <%=email%>
+                </td>
+                <td>
+                    <%=number%>
+                </td>
+
+                <td class="text-end">
+                    <a href="#" type="button" class="btn btn-light btn-small">View</a>
+                    <a href="#" type="button" class="btn btn-light btn-small">Edit</a>
+                    <a href="#" type="button" class="btn btn-light btn-small">Delete</a>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <%- include('partials/footer') %>
